@@ -1,0 +1,89 @@
+/*CHOOSE CHARACTER*/
+
+.character {
+    height: 150px;
+    width: 150px;
+}
+
+.chooseTamagotchi {
+    display: flex;
+    flex-direction: column;
+}
+
+.tamagotchiImg {
+    width: 100%;
+    height: 100%;
+}
+
+.tamagotchiImg:hover {
+    background-color: #fff554;
+    cursor: pointer;
+}
+
+/*MAIN GAME*/
+
+.gameScreen {
+    display: block;
+}
+
+.bar {
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #434343;
+}
+
+.happyBar, .foodBar, .sleepBar {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main {
+    background-image: url("https://64.media.tumblr.com/2a147549f69f13da935aec570f2c2c1e/91cbac430d1b6d34-e0/s400x600/48c771b5a32f873b165b64aafea8ea613c5e9ff9.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: round;
+    position: relative;
+    border: 2px solid #cccccc;
+}
+
+.option:hover {
+    background-color: #89ff89;
+    cursor: pointer;
+}
+
+.chosenTamagotchiDiv {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.chosenTamagotchi {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 130px;
+    left: 0px;
+    animation: leftToRight 4s infinite linear;
+}
+
+@keyframes leftToRight {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.poop {
+    position: absolute;
+}
+
+
+
